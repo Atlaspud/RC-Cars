@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CC3501 Bluetooth Controller</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bluetooth_controller">Bluetooth Controller</string>
+    <string name="find_paired_devices">Find paired Devices</string>
+    <string name="title_activity_device_list">DeviceList</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="title_activity_controller">Controller</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="increase">Increase</string>
+    <string name="right"> Right  </string>
+    <string name="left">Left</string>
+    <string name="decrease">Decrease</string>
+    <string name="reverse">Reverse</string>
+    <string name="connection_status_">Connection Status:</string>
+    <string name="duty_cycle_">Duty Cycle:</string>
+    <string name="_0_">0%</string>
+    <string name="steering_position_">Steering Position:</string>
+    <string name="center">Center</string>
+
+</resources>

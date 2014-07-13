@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Controller" >
+
+    <Button
+        android:id="@+id/btnIncrease"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnLEFT"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:text="@string/increase"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/connectStatus"
+        android:layout_alignLeft="@+id/btnLEFT"
+        android:text="@string/duty_cycle_" />
+
+    <TextView
+        android:id="@+id/txtDuty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/connectStatus"
+        android:text="@string/_0_"
+        android:textSize="15dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connectStatus"
+        android:layout_alignParentTop="true"
+        android:text="@string/connection_status_" />
+
+    <TextView
+        android:id="@+id/connectStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnIncrease"
+        android:layout_below="@+id/textView1"
+        android:text="@string/not_connected"
+        android:textSize="15dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/btnLEFT"
+        android:text="@string/steering_position_" />
+
+    <TextView
+        android:id="@+id/txtSteer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDuty"
+        android:layout_alignBottom="@+id/txtDuty"
+        android:layout_toRightOf="@+id/btnLEFT"
+        android:text="@string/center" />
+
+    <Button
+        android:id="@+id/btnREV"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/btnIncrease"
+        android:layout_alignRight="@+id/btnIncrease"
+        android:layout_below="@+id/btnLEFT"
+        android:text="@string/reverse"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnRIGHT"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnIncrease"
+        android:layout_marginRight="58dp"
+        android:text="@string/right"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLEFT"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="37dp"
+        android:layout_toLeftOf="@+id/btnRIGHT"
+        android:text="@string/left"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>
